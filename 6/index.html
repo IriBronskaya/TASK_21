@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запрос картинок</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Запрос картинок</h1>
+        <div class="form">
+            <label for="pageInput">Номер страницы:</label>
+            <input type="number" id="pageInput" min="1" max="10">
+            <br>
+            <label for="limitInput">Лимит:</label>
+            <input type="number" id="limitInput" min="1" max="10">
+            <br>
+            <button id="submitButton">Запрос</button>
+        </div>
+        <div class="result">
+            <div id="errorText" class="error"></div>
+            <div id="imageList" class="image-list"></div>
+        </div>
+    </div>
+    <script src="6.js"></script>
+</body>
+</html>
